@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fluffy Shop - Productos</title>
+
+  <link rel="icon" type="image/png" href="../imagenes/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="../index.html">Fluffy Shop</a>
+
+        <!-- Icono carrito -->
+        <div class="d-flex align-items-center order-lg-2">
+          <a href="#" class="btn position-relative" id="openCart">
+            🛒
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+          </a>
+        </div>
+
+        <!-- Botón menú móvil -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="productos.html" class="nav-link active">Productos</a></li>
+            <li class="nav-item"><a href="contactanos.html" class="nav-link">Contáctanos</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container my-5">
+    <h1 class="mb-4">Productos</h1>
+
+    <div class="row">
+
+      <!-- PRODUCTO 1 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/canil.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Canil Transportador</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <!-- Ver -->
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Canil Transportador"
+                data-desc="Transportador portátil para mascotas con ventilación 360°, fácil apertura y asa de transporte. Ideal para perros y gatos en viajes aéreos y por carretera. Tamaños: S, M, L, XL. Colores: marrón y azul."
+                data-price="419.00"
+                data-img1="../imagenes/canil.png"
+                data-img2="../imagenes/canil2.png"
+                data-img3="../imagenes/canil3.png">
+                👁️ Ver
+              </button>
+
+              <!-- Carrito -->
+              <button class="btn btn-primary addToCart"
+                data-name="Canil Transportador"
+                data-price="419.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/gimnasio.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Gimnasio 5 Niveles</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Gimnasio 5 niveles"
+                data-desc="Gimnasio para gatos de 5 niveles con plataformas, cuevas y juguetes. Fomenta ejercicio, descanso y cuidado de uñas. Estructura robusta y materiales duraderos. Colores azul y marrón."
+                data-price="263.00"
+                data-img1="../imagenes/gimnasio.png"
+                data-img2="../imagenes/gimnasio2.png"
+                data-img3="../imagenes/gimnasio4.png"
+                data-video="../videos/gimnasio.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Gimnasio 5 Niveles"
+                data-price="263.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/cepillo.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Cepillo de Vapor</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Cepillo de Vapor"
+                data-desc="Peine eléctrico con pulverización de agua para desenredar e hidratar el pelaje. Compacto, recargable y fácil de usar. Cerdas suaves, ideal para todo tipo de mascotas. ¡Asear nunca fue tan fácil!"
+                data-price="55.00"
+                data-img1="../imagenes/cepillo.png"
+                data-img2="../imagenes/cepillo2.png"
+                data-img3="../imagenes/cepillo3.png"
+                data-video="../videos/cepillo.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Cepillo de Vapor"
+                data-price="55.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- REPEAT OF ALL OTHER PRODUCTS (UNCHANGED) -->
+
+      <!-- PRODUCTO 4 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/comedero.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Platos Altos de Cerámica</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Platos Altos de Cerámica"
+                data-desc="Cuencos dobles de cerámica elevados para perros y gatos. Diseño ergonómico que reduce la tensión en el cuello. Base antideslizante y fácil de limpiar. Ideal para una alimentación saludable."
+                data-price="95.00"
+                data-img1="../imagenes/comedero.png"
+                data-img2="../imagenes/comedero2.png"
+                data-img3="../imagenes/comedero3.png"
+                data-video="../videos/comedero.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Platos Altos de Cerámica"
+                data-price="95.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 5 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/pelotas.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Pelota Sonrisa</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Pelota Sonrisa"
+                data-desc="Juguete de PVC con diseño de dientes, ideal para morder y jugar. Material duradero y seguro, disponible en colores vibrantes. Perfecto para perros, cachorros y gatos. Diámetro: 8 cm. ¡Diversión garantizada!"
+                data-price="12.00"
+                data-img1="../imagenes/pelotas.png"
+                data-video="../videos/pelotas.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Pelota Sonrisa"
+                data-price="12.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 6 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/cama.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Cama Gato Cueva</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Cama Gato Cueva"
+                data-desc="Cama cueva para gato con relleno de algodón PP, base antideslizante, estructura desmontable, material suave y transpirable, ideal para gatos de hasta 12 kg. Medidas: 40x40x40 cm."
+                data-price="95.00"
+                data-img1="../imagenes/cama.png"
+                data-img2="../imagenes/cama2.png"
+                data-img3="../imagenes/cama3.png"
+                data-video="../videos/cama.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Cama Gato Cueva"
+                data-price="95.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 7 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/cuchara.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Cuchara Balanza</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Cuchara Balanza"
+                data-desc="Báscula electrónica para mascotas con pantalla digital. Mide alimentos sólidos y líquidos (g, ml, oz). Precisión de 1g, fácil de limpiar, ligera y con múltiples unidades de medida. ¡Porciones exactas!"
+                data-price="54.00"
+                data-img1="../imagenes/cuchara.png"
+                data-img2="../imagenes/cuchara2.png"
+                data-img3="../imagenes/cuchara3.png">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Cuchara Balanza"
+                data-price="54.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 8 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/bolso.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Bolso para Mascotas Pequeñas</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Bolso para Mascotas Pequeñas"
+                data-desc="Viaja con tu mascota cómodamente y con seguridad. Bolsa con malla transpirable, fondo rígido, 5 bolsillos y cuerda de seguridad. Colores: Beige, Gris."
+                data-price="158.00"
+                data-img1="../imagenes/bolso.png"
+                data-img2="../imagenes/bolso2.png"
+                data-img3="../imagenes/bolso3.png"
+                data-video="../videos/bolso.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Bolso para Mascotas Pequeñas"
+                data-price="158.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 9 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/arnes.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Arnés Táctico</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Arnés Táctico"
+                data-desc="Chaleco táctico para perros, ajuste rápido y cómodo. Material resistente (Nylon 900D), dos anillos de metal, y malla transpirable. Ideal para entrenamiento y paseos."
+                data-price="127.00"
+                data-img1="../imagenes/arnes.png"
+                data-img2="../imagenes/arnes2.png"
+                data-img3="../imagenes/arnes3.png"
+                data-video="../videos/arnes.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Arnés Táctico"
+                data-price="127.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 10 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/transportador.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Transportador Cápsula</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Transportador Cápsula"
+                data-desc="Transportador para gatos cómodo y seguro, con ventilación, cojín desmontable y diseño práctico. Techo panorámico, base adaptable a invierno/verano. Capacidad para mascotas de hasta 6 kg."
+                data-price="184.00"
+                data-img1="../imagenes/transportador.png"
+                data-img2="../imagenes/transportador2.png"
+                data-img3="../imagenes/transportador3.png"
+                data-video="../videos/transportador.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Transportador Cápsula"
+                data-price="184.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 11 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/mascota.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Bolso con Diseño para Mascota Pequeña</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Bolso con Diseño para Mascota Pequeña"
+                data-desc="Transportador para gatos con orificio retráctil, cuerda ajustable y hebilla de seguridad. Espacio amplio, ideal para gatos de hasta 15 kg. Lana gruesa, resistente al viento y frío."
+                data-price="95.00"
+                data-img1="../imagenes/mascota.png"
+                data-img2="../imagenes/mascota2.png"
+                data-img3="../imagenes/mascota3.png">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Bolso con Diseño para Mascota Pequeña"
+                data-price="95.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 12 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../imagenes/coches.png" class="card-img-top">
+
+          <div class="card-body text-center">
+            <h5 class="card-title">Coche para Perros Grandes</h5>
+
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-secondary verProducto"
+                data-name="Coche para Perros Grandes"
+                data-desc="Cochecito para perros grandes, ideal hasta 60 kg. Cabina espaciosa (80x63x64 cm), ruedas duraderas, fácil de plegar y transportar. Malla para ventilación y visibilidad. Estructura de acero inoxidable."
+                data-price="583.00"
+                data-img1="../imagenes/coches.png"
+                data-img2="../imagenes/coches2.png"
+                data-img3="../imagenes/coches3.png"
+                data-video="../videos/coches.mp4">
+                👁️ Ver
+              </button>
+
+              <button class="btn btn-primary addToCart"
+                data-name="Coche para Perros Grandes"
+                data-price="583.00">🛒 Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ====================== -->
+  <!-- MODAL VER PRODUCTO -->
+  <!-- ====================== -->
+  <div class="modal fade" id="viewModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewTitle"></h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <!-- CARRUSEL -->
+          <div id="carouselProducto" class="carousel slide mb-3">
+            <div class="carousel-inner" id="carouselContent"></div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <p id="viewDesc"></p>
+          <h4 class="text-success">Precio: S/ <span id="viewPrice"></span></h4>
+
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="viewAddCart">🛒 Agregar al carrito</button>
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================== -->
+  <!-- MODAL CARRITO -->
+  <!-- ====================== -->
+  <div class="modal fade" id="cartModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito de compras</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <ul id="cartList" class="list-group"></ul>
+          <h5 class="mt-3">Total: S/ <span id="cartTotal">0</span></h5>
+        </div>
+
+        <div class="modal-footer">
+          <!-- CAMBIO: Ahora abre el modal de compra -->
+          <button class="btn btn-success" id="openCheckout">Comprar</button>
+          <button class="btn btn-danger" id="clearCart">Vaciar carrito</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================== -->
+  <!-- MODAL FORMULARIO DE COMPRA -->
+  <!-- ====================== -->
+  <div class="modal fade" id="checkoutModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Formulario de Compra</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <form id="checkoutForm">
+
+        <div class="mb-3">
+            <label class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Teléfono</label>
+
+          <div class="input-group">
+            <span class="input-group-text">+51</span>
+
+            <input type="text" 
+                class="form-control" 
+                id="phoneNumber"
+                required
+                maxlength="12"
+                placeholder="987 654 321">
+          </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Dirección</label>
+            <input type="text" class="form-control" required>
+        </div>
+
+        <hr>
+
+        <h4 class="text-center mb-3 fw-bold">Datos de la tarjeta</h4>
+
+        <div class="mb-3">
+        <label class="form-label">Número de tarjeta</label>
+        <input type="text" class="form-control" required 
+            id="cardNumber"
+            maxlength="19"
+            placeholder="1234 5678 9012 3456"
+            pattern="^[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}$">
+        </div>
+
+        <div class="row">
+            <div class="col-6 mb-3">
+            <label class="form-label">Vencimiento (MM/AA)</label>
+            <input type="text" class="form-control" required
+                maxlength="5"
+                placeholder="08/28"
+                pattern="^(0[1-9]|1[0-2])\/[0-9]{2}$">
+            </div>
+
+            <div class="col-6 mb-3">
+            <label class="form-label">CVC</label>
+            <input type="password" class="form-control" required
+                maxlength="3"
+                placeholder="123"
+                pattern="^[0-9]{3}$">
+            </div>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="rememberData">
+            <label class="form-check-label" for="rememberData">
+            Recordar mis datos para la próxima compra
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Confirmar Pago</button>
+        </form>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="successModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        <div class="modal-header">
+            <h5 class="modal-title">¡Compra Exitosa!</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body text-center">
+            <h4 class="text-success">✔ Compra realizada con éxito</h4>
+            <p>Gracias por su compra. Su pedido está siendo procesado.</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-5" style="background:#2c2c2c; color:white;">
+  <div class="container py-5">
+
+    <div class="row">
+
+      <!-- LOGO + DESCRIPCIÓN -->
+      <div class="col-md-4 mb-4">
+        <h3 class="fw-bold" style="color:#ff7b00;">Fluffy Shop</h3>
+        <p style="color:#ddd;">
+          La tienda donde el amor por las mascotas se convierte en productos de calidad.
+          Cuidamos, creamos y elegimos lo mejor para tus fieles compañeros.
+        </p>
+
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" style="font-size:24px; text-decoration:none;">📘</a>
+          <a href="#" style="font-size:24px; text-decoration:none;">📸</a>
+          <a href="#" style="font-size:24px; text-decoration:none;">🎵</a>
+        </div>
+      </div>
+
+      <!-- ENLACES RÁPIDOS -->
+      <div class="col-md-2 mb-4">
+        <h5 class="fw-bold" style="color:#ffb366;">Enlaces</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="footer-link">Inicio</a></li>
+          <li><a href="html/nosotros.html" class="footer-link">Nosotros</a></li>
+          <li><a href="html/productos.html" class="footer-link">Productos</a></li>
+          <li><a href="html/contactanos.html" class="footer-link">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      <!-- SECCIÓN LEGAL -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold" style="color:#ffb366;">Legal</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Términos y condiciones</a></li>
+          <li><a href="#" class="footer-link">Política de privacidad</a></li>
+          <li><a href="#" class="footer-link">Preguntas frecuentes (FAQ)</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold" style="color:#ffb366;">Contacto</h5>
+        <p class="m-0">📍 Lima, Perú</p>
+        <p class="m-0">📞 +51 987 654 321</p>
+        <p class="m-0">📧 contacto@fluffyshop.com</p>
+      </div>
+
+    </div>
+
+    <hr style="border-color:#ff7b00;">
+
+    <p class="text-center m-0" style="color:#ccc;">
+      © <span id="year"></span> Fluffy Shop — Todos los derechos reservados.
+    </p>
+
+  </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
